@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedor{
+    color: white;
+    background-color: #3E2C41;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navegador{
+    background-color: #261C2C;
+}
+
+.header{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .imgIndex{
+    width: 250px;
+}
+
+.pieDePag{
+    background-color: #261C2C;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    margin-top: auto;
+}
+
+.buttonCart{
+    min-width: 130px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid #2c0b8e;
+    background: #2c0b8e;
+}
+
+.buttonCart:hover {
+    background: #fff;
+    color: #2c0b8e
+}
+
+.botonBuscar{
+    margin: 10px;
+    padding: 10px;
+}
+
+.navBar{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.navBar a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.imgNavbar{
+    text-align: center;    
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.efectoLogo:hover{
+    transform:scale(1.05);
+    transition: 1s;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: red;
+    font-size: 0.9rem;
+}
+
+.sectionPrincipal{
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.sectionPrincipal img{
+    margin: 10px;
+}
+
+.pieDePag div{
+    margin: 10px;
+    text-align: center;
+}
+
+.pieDePag div ul{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.pieDePag div h3{
+    font-size: 1rem;
+}
+
+.pieDePag div ul li a{
+    text-decoration: none;
+}
+
+.pieDePag div ul li a img{
+    width: 20px;
+    margin: 0 5px;
+    color: white;
+}
+
+.rrss{
+    display: flex;
+    justify-content: center;
+}
+
+.footerAtencion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .sectionCard{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main .sectionCard .card{
+    width: 250px;
+    background-color: #5C527F;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.cardProduct img{
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.cardProduct p{
+    margin-bottom: 10px;
+}
+
+.section-form-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 5px;
+    font-size: 3rem;
+    margin: 50px;
+}
+
+.section-form-contact label{
+    margin: 10px 0px;
+    font-size: 1.2rem;
+}
+
+.section-form-contact input{
+    width: 200px;
+    height: 20px;
+}
+
+.section-form-contact .phone1{
+    width: 60px;
+}
+
+.section-form-contact .phone2{
+    width: 120px;
+}
+
+.section-form-contact .message{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.headerCuenta{
+    margin-bottom: 100px;
+}
+
+.main .section-form-cuenta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main .section-form-cuenta div{
+    margin: 50px;    
+}
+
+.header .headerCuenta{
+    font-size: 3rem;
+}
+
+.section-form-cuenta h3{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.section-form-cuenta label{
+    font-size: 1rem;
+}
+
+.section-form-cuenta{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section-form-cuenta button{
+    margin-top: 10px;
+}
+
+.cajaCarrito{
+    margin-top: 50px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cajaCarrito button{
+    margin-top: 30px;
+}
+
+.cajaIniciar{
+    display: flex;
+    flex-direction: column;
+}
+
+.cajaIniciar label{
+    margin: 10px;
+}
+
+.cajaRegistrar{
+    display: flex;
+    flex-direction: column;
+}
+
+.cajaRegistrar label{
+    margin: 10px;
+}
+
+.pieDePag div .rrss li a img{
+    width: 30px;
+}
+
+@media (min-width: 768px){
+    
+    .navegador .navBar li a{
+        padding: 8px;
+    }
+
+    .navegador .navBar li {
+        font-size: 1.15rem;
+    }
+
+    a:hover{
+        font-size: 1.2rem;
+    }
+
+    .header h1{
+        font-size: 2.5rem;
+    }
+
+    .main .sectionPrincipal{
+        font-size: 1.5rem;
+    }
+
+    .main .imgIndex{
+        width: 500px;
+    }
+
+    .section-form-contact label{
+        margin: 10px 0px;
+        font-size: 1.2rem;
+    }
+    
+    .section-form-contact input{
+        width: 600px;
+        height: 20px;
+    }
+    
+    .section-form-contact .phone1{
+        width: 100px;
+    }
+    
+    .section-form-contact .phone2{
+        width: 500px;
+    }
+    
+    .section-form-contact .message{
+        width: 600px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .pieDePag div h3{
+        font-size: 1.5rem;
+    }
+
+    .pieDePag div ul li{
+        font-size: 1rem;
+    }
+
+    .pieDePag div .rrss li a img{
+        width: 35px;
+    }
+
+    .cajaCarrito{        
+        margin-top: 100px;
+    }
+
+    .cajaIniciar label{
+        font-size: 1.5rem;
+    }
+
+    .cajaRegistrar label{
+        font-size: 1.5rem;
+    }
+
+    .section-form-cuenta h3{
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .navegador .navBar li a{
+        padding: 10px;
+    }
+
+    .navegador .navBar li {
+        font-size: 1.5rem;
+    }
+
+    .header h1{
+        font-size: 3rem;
+    }
+
+    .main .sectionPrincipal{
+        font-size: 1.5rem;
+    }
+
+    .main .imgIndex{
+        width: 700px;
+    }
+
+    .section-form-contact label{
+        margin: 10px 0px;
+        font-size: 1.2rem;
+    }
+    
+    .section-form-contact input{
+        width: 1000px;
+        height: 30px;
+    }
+    
+    .section-form-contact .phone1{
+        width: 200px;
+    }
+    
+    .section-form-contact .phone2{
+        width: 790px;
+    }
+    
+    .section-form-contact .message{
+        width: 1000px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .section-form-contact label{
+        font-size: 2rem;
+    }
+
+    .pieDePag div h3{
+        font-size: 2rem;
+    }
+
+    .pieDePag div ul li{
+        font-size: 1.5rem;
+    }
+
+    .pieDePag div .rrss li a img{
+        width: 50px;
+    }
+
+    .cajaCarrito{        
+        margin-top: 100px;
+    }
+
+    .cajaIniciar label{
+        font-size: 2rem;
+    }
+
+    .cajaRegistrar label{
+        font-size: 2rem;
+    }
+
+    .section-form-cuenta h3{
+        font-size: 5rem;
+    }
+
+    .botonBuscar .form-control {
+        width: 150px;
+        height: 50px;
+    }
+
+    .botonBuscar{
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+/* @media (min-width: 768px) {
+
+.contenedor{
+    color: white;
+    background-color: #3E2C41;
+    min-height: 100vh;
+}
+
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.navegador .navBar li {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+
+
+.pieDePag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.pieDePag div h3{
+    font-size: 1.5rem;
+}
+
+a:hover{
+    font-size: 1.2rem;
+}
+
+.section-form-contact label{
+    margin: 10px 0px;
+    font-size: 1.2rem;
+}
+
+.section-form-contact input{
+    width: 600px;
+    height: 20px;
+}
+
+.section-form-contact .phone1{
+    width: 100px;
+}
+
+.section-form-contact .phone2{
+    width: 500px;
+}
+
+.section-form-contact .message{
+    width: 600px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+}
+
+@media (min-width:1200px){
+
+.navegador .navBar li {
+        font-size: 1.5rem;
+}
+
+.navegador div a img{
+    width: 400px;
+}
+
+.header h1{
+    font-size: 3rem;
+}
+
+.main .sectionPrincipal article{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+
+
+.pieDePag{
+    font-size: 1.5rem;
+}
+
+.pieDePag div .rrss li a img{
+    width: 40px;
+}
+
+.cajaCarrito h3{
+    font-size: 2rem;
+}
+
+.cajaCarrito button{
+    width: 200px;
+}
+
+
+
+.main .section-form-cuenta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+} */
